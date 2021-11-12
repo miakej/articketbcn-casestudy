@@ -64,15 +64,23 @@ html {
 		color: var(--black);
 	}
 
-	a.nav-menu {
+	a.nav {
 		font-size: 17px;
 		line-height: 24px;
 		letter-spacing: 2px;
 		font-weight: 400;
+		padding: 0 1.3rem;
+	}
+
+	.nav--active {
+		border-bottom: 2px solid var(--red);
 	}
 
 
 /* COMPONENT DEFAULTS */
+	.component {
+		padding: 1rem;
+	}
 	.component img {
 		max-width: initial;
 	}
@@ -99,4 +107,27 @@ html {
 	a.purchasebutton--active {
 		color: var(--cream);
 		background: var(--red);
+	}
+
+/* NAV BAR */
+
+	.nav-bar__menu {
+		display: flex;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav-bar__language {
+		list-style-type: none;
+		padding: 0;
+		line-height: 2em;
+	}
+
+/* HEADER */
+	
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
