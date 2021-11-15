@@ -172,3 +172,7 @@ html {
 		line-height: 1em;
 		text-transform: uppercase;
 	}
+
+	.museum__name, .museum__summary {
+		padding: 0 .5rem;
+	}
