@@ -88,7 +88,7 @@ html {
 		padding: 0 1.3rem;
 	}
 
-	.nav--active {
+	.nav--active, h5:hover {
 		border-bottom: 2px solid var(--red);
 	}
 
