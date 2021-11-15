@@ -10,128 +10,110 @@
 <body>
 	<h1>Web components</h1>
 
-	<h2>Typography Defaults</h2>
-
-		<article class="component">
-			<h3 class="component__name">body</h3>
-			<div class="component__img">
-				<img 
-					srcset="img/bodytext@2x.png 1.3x"
-					src="img/bodytext@2x.png" 
-					alt="body copy"/>
-			</div>
-			<div class="component__code">
-				<p>The Fundació Joan Miró is a space that showcases the artist’s work alongside other contemporary pieces that help to maintain Joan Miró’s unique artistic legacy alive.</p>
-			</div>
+	<div class="sidebar">
+		<article class="sidebar_section">
+			<h3 class="sidebar_heading">Typography Defaults</h3>
+				<h5><a class="sidebar_item" href="#!">body</a></h5>
+				<h5><a class="sidebar_item" href="#!">h1</a></h5>
+				<h5><a class="sidebar_item" href="#!">h2</a></h5>
+				<h5><a class="sidebar_item" href="#!">h3</a></h5>
+				<h5><a class="sidebar_item" href="#!">nav menu</a></h5>
 		</article>
-
-		<article class="component">
-			<h3 class="component__name">headings (h1, h2, h3)</h3>
-			<div class="component__img">
-				<img 
-					srcset="img/main_heading@2x.png 2x"
-					src="img/main_heading@2x.png" 
-					alt="h1"/>
-				<img 
-					srcset="img/section__heading@2x.png 2x"
-					src="img/section__heading@2x.png" 
-					alt="h2"/>
-				<img 
-					srcset="img/museum-card__title@2x.png 2x"
-					src="img/museum-card__title@2x.png" 
-					alt="h3"/>
-			</div>
-			<div class="component__code">
-				<h1>The best art museums in barcelona in one pass</h1>
-				<h2>Museums Included</h2>
-				<h3>Fundació Antoni Tàpies</h3>
-			</div>
+		<article class="sidebar_section">
+			<h3 class="sidebar_heading">buttons and navigation</h3>
+				<h5><a class="sidebar_item" href="#!">purchase button</a></h5>
+				<h5><a class="sidebar_item" href="#!">nav-bar</a></h5>
 		</article>
-
-		<article class="component">
-			<h3 class="component__name">nav menu</h3>
-			<div class="component__img">
-				<img 
-					srcset="img/nav-bar__menu-item@2x.png 2x"
-					src="img/nav-bar__menu-item@2x.png" 
-					alt="nav-bar menu item"/>
-			</div>
-			<div class="component__code">
-				<a class="nav-menu" href="#!">Museums</a>
-			</div>
+		<article class="sidebar_section">
+			<h3 class="sidebar_heading">header</h3>
+				<h5><a class="sidebar_item" href="#!">header</a></h5>
 		</article>
+	</div>
 
-	<h2>Buttons</h2>
+	<div class="main">
+		<section class ="component_section">
+		<h2>Typography Defaults</h2>
 
-		<article class="component">
-			<h3 class="component__name">Purchase Button</h3>
-			<div class="component__img">
-				<img 
-					srcset="img/button.purchase@2x.png 2x"
-					src="img/button.purchase@2x.png" 
-					alt="purchase button"/>
-				<img 
-					srcset="img/button.purchaseactive@2x.png 2x"
-					src="img/button.purchaseactive@2x.png" 
-					alt="purchase button active"/>
-			</div>
-			<div class="component__code">
-				<a class="purchasebutton" href="#!">Buy your articket</a>
-				<a class="purchasebutton purchasebutton--active" href="#!">Buy your articket</a>
-			</div>
-		</article>
+			<article class="component">
+				<h3 class="component__name">body</h3>
+				<div class="component__img">
+					<img 
+						srcset="img/bodytext@2x.png 1.3x"
+						src="img/bodytext@2x.png" 
+						alt="body copy"/>
+				</div>
+				<div class="component__code">
+					<p>The Fundació Joan Miró is a space that showcases the artist’s work alongside other contemporary pieces that help to maintain Joan Miró’s unique artistic legacy alive.</p>
+				</div>
+			</article>
 
-		<article class="component nav-bar">
-			<h3 class="component__name">nav-bar</h3>
-			<div class="component__img">
-				<img 
-					srcset="img/nav-bar__menu-list@2x.png 2x"
-					src="img/nav-bar__menu-list@2x.png" 
-					alt="nav-bar menu list"/>
-			</div>
-			<div class="component__code">
-				<ul class="nav-bar__menu">
-					<li><a class="nav nav-menu" href="#!">Museums</a></li>
-					<li><a class="nav nav-menu" href="#!">how it works</a></li>
-					<li><a class="nav nav-menu" href="#!">routes</a></li>
-					<li><a class="nav nav-menu" href="#!">contact</a></li>
-				</ul>
-			</div>
+			<article class="component">
+				<h3 class="component__name">headings (h1, h2, h3)</h3>
+				<div class="component__img">
+					<img 
+						srcset="img/main_heading@2x.png 2x"
+						src="img/main_heading@2x.png" 
+						alt="h1"/>
+					<img 
+						srcset="img/section__heading@2x.png 2x"
+						src="img/section__heading@2x.png" 
+						alt="h2"/>
+					<img 
+						srcset="img/museum-card__title@2x.png 2x"
+						src="img/museum-card__title@2x.png" 
+						alt="h3"/>
+				</div>
+				<div class="component__code">
+					<h1>The best art museums in barcelona in one pass</h1>
+					<h2>Museums Included</h2>
+					<h3>Fundació Antoni Tàpies</h3>
+				</div>
+			</article>
 
-			<div class="component__img">
-				<img 
-					srcset="img/nav-bar__language-list@2x.png 2x"
-					src="img/nav-bar__language-list@2x.png" 
-					alt="nav-bar language list"/>
-			</div>
-			<div class="component__code">
-				<ul class="nav-bar__language">
-					<li><a class="nav nav--active" href="#!">en</a></li>
-					<li><a class="nav" href="#!">ca</a></li>
-					<li><a class="nav" href="#!">es</a></li>
-					<li><a class="nav" href="#!">fr</a></li>
-					<li><a class="nav" href="#!">it</a></li>
-					<li><a class="nav" href="#!">de</a></li>
-				</ul>
-			</div>
-		</article>
-	<h2>header</h2>
-		<article class="component">
-			<h3 class="component__name">header</h3>
-			<div class="component__img">
-				<img 
-					srcset="img/header@2x.png 2x"
-					src="img/header@2x.png" 
-					alt="header"/>
-			</div>
+			<article class="component">
+				<h3 class="component__name">nav menu</h3>
+				<div class="component__img">
+					<img 
+						srcset="img/nav-bar__menu-item@2x.png 2x"
+						src="img/nav-bar__menu-item@2x.png" 
+						alt="nav-bar menu item"/>
+				</div>
+				<div class="component__code">
+					<a class="nav-menu" href="#!">Museums</a>
+				</div>
+			</article>
+		</section>
 
-			<div class="header">
-				<img 
-					class="logo"
-					srcset="img/logo@2x.png 2x"
-					src="img/logo@2x.png" 
-					alt="logo">
-				<div class="main_nav">
+		<section class ="component_section">
+		<h2>Buttons</h2>
+
+			<article class="component">
+				<h3 class="component__name">Purchase Button</h3>
+				<div class="component__img">
+					<img 
+						srcset="img/button.purchase@2x.png 2x"
+						src="img/button.purchase@2x.png" 
+						alt="purchase button"/>
+					<img 
+						srcset="img/button.purchaseactive@2x.png 2x"
+						src="img/button.purchaseactive@2x.png" 
+						alt="purchase button active"/>
+				</div>
+				<div class="component__code">
+					<a class="purchasebutton" href="#!">Buy your articket</a>
+					<a class="purchasebutton purchasebutton--active" href="#!">Buy your articket</a>
+				</div>
+			</article>
+
+			<article class="component nav-bar">
+				<h3 class="component__name">nav-bar</h3>
+				<div class="component__img">
+					<img 
+						srcset="img/nav-bar__menu-list@2x.png 2x"
+						src="img/nav-bar__menu-list@2x.png" 
+						alt="nav-bar menu list"/>
+				</div>
+				<div class="component__code">
 					<ul class="nav-bar__menu">
 						<li><a class="nav nav-menu" href="#!">Museums</a></li>
 						<li><a class="nav nav-menu" href="#!">how it works</a></li>
@@ -139,7 +121,14 @@
 						<li><a class="nav nav-menu" href="#!">contact</a></li>
 					</ul>
 				</div>
-				<div class="language_nav">
+
+				<div class="component__img">
+					<img 
+						srcset="img/nav-bar__language-list@2x.png 2x"
+						src="img/nav-bar__language-list@2x.png" 
+						alt="nav-bar language list"/>
+				</div>
+				<div class="component__code">
 					<ul class="nav-bar__language">
 						<li><a class="nav nav--active" href="#!">en</a></li>
 						<li><a class="nav" href="#!">ca</a></li>
@@ -149,9 +138,50 @@
 						<li><a class="nav" href="#!">de</a></li>
 					</ul>
 				</div>
-				<div class="purchasebutton">
-					<a class="purchasebutton" href="#!">Buy your articket</a>
+			</article>
+		</section>
+
+		<section class ="component_section">
+		<h2>header</h2>
+			<article class="component">
+				<h3 class="component__name">header</h3>
+				<div class="component__img">
+					<img 
+						srcset="img/header@2x.png 2x"
+						src="img/header@2x.png" 
+						alt="header"/>
 				</div>
-			</div>
+
+				<div class="header">
+					<img 
+						class="logo"
+						srcset="img/logo@2x.png 2x"
+						src="img/logo@2x.png" 
+						alt="logo">
+					<div class="main_nav">
+						<ul class="nav-bar__menu">
+							<li><a class="nav nav-menu" href="#!">Museums</a></li>
+							<li><a class="nav nav-menu" href="#!">how it works</a></li>
+							<li><a class="nav nav-menu" href="#!">routes</a></li>
+							<li><a class="nav nav-menu" href="#!">contact</a></li>
+						</ul>
+					</div>
+					<div class="language_nav">
+						<ul class="nav-bar__language">
+							<li><a class="nav nav--active" href="#!">en</a></li>
+							<li><a class="nav" href="#!">ca</a></li>
+							<li><a class="nav" href="#!">es</a></li>
+							<li><a class="nav" href="#!">fr</a></li>
+							<li><a class="nav" href="#!">it</a></li>
+							<li><a class="nav" href="#!">de</a></li>
+						</ul>
+					</div>
+					<div class="purchasebutton">
+						<a class="purchasebutton" href="#!">Buy your articket</a>
+					</div>
+				</div>
+			</article>
+		</section>
+	</div>
 </body>
 </html>
