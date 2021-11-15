@@ -125,6 +125,14 @@ html {
 		background: var(--red);
 	}
 
+	a.purchasebutton--nav {
+		font-size: 18px;
+		line-height: 25px;
+		letter-spacing: 0;
+		font-weight: 600;
+		padding: .5rem;
+	}
+
 /* NAV BAR */
 
 	.nav-bar__menu {
