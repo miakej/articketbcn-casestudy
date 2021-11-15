@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h1>Web components</h1>
-
+<!--sidebar-->
 	<div class="sidebar">
 		<article class="sidebar_section">
 			<h3 class="sidebar_heading">Typography Defaults</h3>
@@ -26,9 +26,14 @@
 			<h3 class="sidebar_heading">header</h3>
 				<h5><a class="sidebar_item" href="#anchor_header">header</a></h5>
 		</article>
+		<article class="sidebar_section">
+			<h3 class="sidebar_heading">cards</h3>
+				<h5><a class="sidebar_item" href="#anchor_icon-card">icon card</a></h5>
+		</article>
 	</div>
 
 	<div class="main">
+<!--typography-->
 		<section class ="component_section">
 		<h2>Typography Defaults</h2>
 
@@ -77,11 +82,11 @@
 						alt="nav-bar menu item"/>
 				</div>
 				<div class="component__code">
-					<a class="nav-menu" href="#!">Museums</a>
+					<a class="nav nav-menu" href="#!">Museums</a>
 				</div>
 			</article>
 		</section>
-
+<!--buttons and nav-->
 		<section class ="component_section">
 		<h2>Buttons</h2>
 
@@ -138,7 +143,7 @@
 				</div>
 			</article>
 		</section>
-
+<!--header-->
 		<section class ="component_section">
 		<h2>header</h2>
 			<article class="component">
@@ -149,7 +154,7 @@
 						src="img/header@2x.png" 
 						alt="header"/>
 				</div>
-
+				<div class="component__code">
 				<div class="header">
 					<img 
 						class="logo"
@@ -164,7 +169,7 @@
 							<li><a class="nav nav-menu" href="#!">contact</a></li>
 						</ul>
 					</div>
-					<div class="language_nav">
+					<div class="nav-bar__language">
 						<ul class="nav-bar__language">
 							<li><a class="nav nav--active" href="#!">en</a></li>
 							<li><a class="nav" href="#!">ca</a></li>
@@ -178,7 +183,30 @@
 						<a class="purchasebutton" href="#!">Buy your articket</a>
 					</div>
 				</div>
+			</div>
 			</article>
+		</section>
+<!--cards-->
+		<section class="component_section">
+			<h2>cards</h2>
+				<article class="component">
+					<h3 id="anchor_icon-card" class="component__name">icon card</h3>
+					<div class="component__img">
+						<img 
+							srcset="img/features__list-card@2x.png 2x"
+							src="img/features__list-card@2x.png" 
+							alt="featured icon card"/>
+					</div>
+					<div class="component__code">
+						<ul class="featured_icons">
+							<li class="icon__card">
+								<div class="i"><img src="../img/icon-clock.svg"></div>
+								<div class="t"><p class="t">Skip</p>
+								<p class="t">the line</p>
+								</div>
+							</li>
+						</ul>
+				</article>
 		</section>
 	</div>
 </body>
