@@ -120,7 +120,7 @@ html {
 		padding: 1rem;
 	}
 
-	a.purchasebutton--active {
+	a.purchasebutton--active , a.purchasebutton:hover{
 		color: var(--cream);
 		background: var(--red);
 	}
@@ -132,6 +132,13 @@ html {
 		font-weight: 600;
 		padding: .5rem;
 		margin: 0 0 0 1rem;
+	}
+
+	.purchasebutton--pass {
+		font-size: 30px;
+		font-weight: 600;
+		line-height: 37.8px;
+		padding: 3% 4%;
 	}
 
 /* NAV BAR + HEADER */
@@ -201,4 +208,30 @@ html {
 
 	.museum__name, .museum__summary {
 		padding: 0 .5rem;
+	}
+
+	.pass__heading {
+		font-size: 66px;
+		letter-spacing: 14px;
+		line-height: 75px;
+	}
+
+	.pass__text {
+		margin: 44px 0;
+	}
+
+	.question-arrow{
+		display: flex;
+		gap: 1rem;
+	}
+
+	.questions {
+		font-size: 21px;
+		font-weight: 600;
+		letter-spacing: 3px;
+		line-height: 7rem;
+	}
+
+	.questions:hover {
+		color: var(--red);
 	}
