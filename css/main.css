@@ -80,7 +80,7 @@ html {
 		color: var(--black);
 	}
 
-	a.nav, h5 {
+	.nav, h5 {
 		font-size: 17px;
 		line-height: 24px;
 		letter-spacing: 2px;
@@ -163,12 +163,15 @@ html {
 
 	.nav-bar__language {
 		line-height: 2em;
+		display: none;
 		position: absolute;
 	}
+
 	.lang {
 		display: block;
 	}
-	.nav__dropdown:hover .lang--active:hover {
+
+	.lang--active:hover .nav-bar__language {
 		display: block
 	}
 
