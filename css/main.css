@@ -3,7 +3,7 @@
 	--red: #DC3D43;
 	--cream: #FEF8F2;
 	--black: #000;
-	--gray: #C8C3BE;
+	--gray: #909090;
 }
 
 html {
@@ -112,6 +112,7 @@ html {
 	a.purchasebutton {
 		font-family: var(--proxima);
 		font-size: 21px;
+		text-align: center;
 		line-height: 30px;
 		letter-spacing: 3px;
 		font-weight: 700;
@@ -134,11 +135,19 @@ html {
 		margin: 0 0 0 1rem;
 	}
 
-	.purchasebutton--pass {
-		font-size: 30px;
+	a.purchasebutton--pass {
+		font-size: 27px;
+		text-align: center;
 		font-weight: 600;
 		line-height: 37.8px;
-		padding: 3% 4%;
+		padding: 2% 5%;
+	}
+
+	a.purchasebutton--promotion {
+		font-size: 19px;
+		letter-spacing: 2px;
+		border: 1px solid var(--red);
+		margin: 2rem;
 	}
 
 
@@ -218,12 +227,14 @@ html {
 	}
 
 	.pass__text {
-		margin: 44px 0;
+		padding: 0 0 1rem;
 	}
 
 	.question-arrow{
 		display: flex;
 		gap: 1rem;
+		align-items: center;
+		margin: 3rem 0 0;
 	}
 
 	.questions {
@@ -249,4 +260,48 @@ html {
 		font-weight: 800;
 		line-height: 40.5px;
 		margin: 0 0 21px;
+	}
+
+	.promotioncard {
+		margin: 2rem;
+		padding: 3rem;
+		box-shadow: -20px -20px var(--red);
+		border: 3px solid var(--red);
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.promotion--left {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 2rem;
+	}
+
+	.promotion--right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
+	}
+
+	.promotion--header1 {
+		font-size: 45px;
+		font-weight: 700;
+		letter-spacing: 4px;
+		margin: 1rem;
+	}
+	.promotion--header2 {
+		font-size: 45px;
+		font-weight: 600;
+		letter-spacing: 6.5px;
+		margin: 0 1rem;
+		color: var(--gray);
+	}
+	.promotion--subheader {
+		font-weight: 600;
+		text-transform: uppercase;
+		margin: 1rem;
 	}
