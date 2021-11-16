@@ -88,7 +88,7 @@ html {
 		padding: 0 1.3rem;
 	}
 
-	.nav:hover, h5:hover {
+	.nav:hover, nav--active, h5:hover {
 		border-bottom: 2px solid var(--red);
 	}
 
@@ -131,30 +131,45 @@ html {
 		letter-spacing: 0;
 		font-weight: 600;
 		padding: .5rem;
+		margin: 0 0 0 1rem;
 	}
 
-/* NAV BAR */
-
-	.nav-bar__menu {
-		display: flex;
-		list-style-type: none;
-		flex-shrink: 1;
-		padding: 0;
-		margin: 0;
-	}
-
-	.nav-bar__language {
-		list-style-type: none;
-		padding: 0;
-		line-height: 2em;
-	}
-
-/* HEADER */
+/* NAV BAR + HEADER */
 	
 	.header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+
+	.main_nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 1rem;
+	}
+
+	.nav-bar__menu {
+		display: flex;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav__dropdown {
+		position: relative;
+		display: inline-block;
+		padding: 0 1rem;
+	}
+
+	.nav-bar__language {
+		line-height: 2em;
+		position: absolute;
+	}
+	.lang {
+		display: block;
+	}
+	.nav__dropdown:hover .lang--active:hover {
+		display: block
 	}
 
 /* CARDS */
