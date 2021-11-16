@@ -23,7 +23,7 @@ html {
 	width: 20%;
 	float: left;
 	position: fixed;
-	overflow: scroll;
+	overflow: auto;
 }
 
 .main {
