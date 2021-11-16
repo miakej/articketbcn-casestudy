@@ -141,6 +141,7 @@ html {
 		padding: 3% 4%;
 	}
 
+
 /* NAV BAR + HEADER */
 	
 	.header {
@@ -234,4 +235,18 @@ html {
 
 	.questions:hover {
 		color: var(--red);
+	}
+
+	.how__step {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 28px;
+		margin: 0 0 23px;
+	}
+
+	.how__stepheading {
+		font-size: 27px;
+		font-weight: 800;
+		line-height: 40.5px;
+		margin: 0 0 21px;
 	}
