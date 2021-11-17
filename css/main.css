@@ -62,7 +62,7 @@ html {
 	}
 
 	h4 {
-		font-size: 27px;
+		font-size: 22px;
 		line-height: 40px;
 		font-weight: 800;
 		color: var(--red);
@@ -132,7 +132,6 @@ html {
 		letter-spacing: 0;
 		font-weight: 600;
 		padding: .5rem;
-		margin: 0 0 0 1rem;
 	}
 
 	a.purchasebutton--pass {
@@ -167,6 +166,7 @@ html {
 
 	.nav-bar__menu {
 		display: flex;
+		flex: 1 1 auto;
 		list-style-type: none;
 		padding: 0;
 		margin: 0;
@@ -255,13 +255,6 @@ html {
 		margin: 0 0 23px;
 	}
 
-	.how__stepheading {
-		font-size: 27px;
-		font-weight: 800;
-		line-height: 40.5px;
-		margin: 0 0 21px;
-	}
-
 	.promotioncard {
 		margin: 2rem;
 		padding: 3rem;
@@ -304,4 +297,12 @@ html {
 		font-weight: 600;
 		text-transform: uppercase;
 		margin: 1rem;
+	}
+
+	.slogan-right {
+		position: fixed;
+		font-weight: 500;
+		font-size: 1.3rem;
+		transform: rotate(-90deg);
+		letter-spacing: .15rem;
 	}
