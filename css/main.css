@@ -149,7 +149,6 @@ html {
 		margin: 2rem;
 	}
 
-
 /* NAV BAR + HEADER */
 	
 	.header {
@@ -305,4 +304,26 @@ html {
 		font-size: 1.3rem;
 		transform: rotate(-90deg);
 		letter-spacing: .15rem;
+	}
+
+/* FOOTER */
+	.footer {
+		background-color: var(--red);
+		padding: 2rem;
+		color: var(--cream);
+	}
+
+	.footer-menu {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.footer-menu__item {
+		color: var(--cream);
+		text-transform: none;
+		font-size: .8rem;
+	}
+
+	.footer-menu__item:hover {
+		text-decoration: underline;
 	}
