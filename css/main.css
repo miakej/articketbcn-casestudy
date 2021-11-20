@@ -311,6 +311,9 @@ html {
 		background-color: var(--red);
 		padding: 2rem;
 		color: var(--cream);
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
 	}
 
 	.footer-menu {
@@ -321,9 +324,17 @@ html {
 	.footer-menu__item {
 		color: var(--cream);
 		text-transform: none;
-		font-size: .8rem;
+		font-size: .7rem;
 	}
 
 	.footer-menu__item:hover {
 		text-decoration: underline;
+	}
+
+	.footer-icon {
+		padding: 1rem 0;
+	}
+
+	.footer-logo {
+		padding: 0 0 1rem;
 	}
