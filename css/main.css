@@ -92,7 +92,6 @@ html {
 		border-bottom: 2px solid var(--red);
 	}
 
-
 /* COMPONENT DEFAULTS */
 	.component {
 		padding: 1rem;
@@ -337,4 +336,16 @@ html {
 
 	.footer-logo {
 		padding: 0 0 1rem;
+	}
+
+/* ORGANISMS */
+	.featured {
+		display: flex;
+		padding: 2rem 0 2rem 2rem;
+	}
+
+	.featured-3 {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
 	}
