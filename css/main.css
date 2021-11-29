@@ -349,3 +349,21 @@ html {
 		gap: 2rem;
 		align-items: center;
 	}
+
+	.museums__grid {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.museum__card {
+		margin: 0 0 2rem;
+		flex-basis: 48%;
+		max-width: 400px;
+	}
+
+	.museum__img {
+		width: 400px;
+		height: 300px;
+		object-fit: cover;
+	}
