@@ -20,15 +20,19 @@ html {
 }
 
 .sidebar {
-	width: 20%;
-	float: left;
+	width: 25%;
+	top: 40px;
+	bottom: 0;
 	position: fixed;
-	overflow: auto;
+	overflow-y: scroll;
 }
 
 .main {
-	width: 80%;
+	width: 75%;
 	float: right;
+	flex-basis: 80%;
+	overflow-x: auto;
+	padding: 0 1rem;
 }
 /* TYPOGRAPHY DEFAULTS */
 	body {
