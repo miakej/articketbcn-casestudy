@@ -376,3 +376,18 @@ html {
 		height: 300px;
 		object-fit: cover;
 	}
+
+	.pass {
+		display: flex;
+		overflow-x: visible;
+		padding: 1rem;
+	}
+
+	.pass__card {
+		min-width: 400px;
+		margin-right: 4.3vw;
+	}
+
+	.pass__img {
+		width: 100%;
+	}
