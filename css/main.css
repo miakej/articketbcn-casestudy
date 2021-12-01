@@ -391,3 +391,14 @@ html {
 	.pass__img {
 		width: 100%;
 	}
+
+	.how__grid {
+		display: flex;
+		justify-content: space-between;
+		gap: 2rem;
+		padding: 5rem;
+	}
+
+	.how__card {
+		
+	}
