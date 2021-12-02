@@ -128,8 +128,12 @@ html {
 		width: 100%;
 	}
 
+	.featured {
+		margin-top: 5rem;
+	}
+
 	section {
-		margin: 5rem 0 1rem 1rem;
+		margin: 1rem 0 1rem 1rem;
 	}
 
 /* MEDIA */
@@ -140,6 +144,16 @@ html {
 	  }
 	}
 
+	@media screen and (min-width: 320px) {
+	  		.featured__heading { 
+	  			font-size: calc(24px + 18 * ((100vw - 320px) / 680));
+	  		}
+		}
+	@media screen and (min-width: 1300px) {
+	  .featured__heading {
+	    font-size: 65px;
+	  }
+	}
 
 
 /* BUTTONS */
@@ -407,18 +421,25 @@ html {
 	.museum__grid {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		gap: 3rem;
+		justify-content: center;
 	}
 
 	.museum__card {
 		margin: 0 0 3.5%;
-    	flex-basis: 30%;
+    	flex-basis: 25%;
+    	flex-shrink: 1;
 	}
 
 	.museum__img {
-		width: 400px;
-		height: 300px;
+		width: 350px;
+		height: 250px;
 		object-fit: cover;
+	}
+
+	.museum__img:hover {
+		transform: scale(1.05);
+		opacity: 0.7;
 	}
 
 /* MEET THE PASS */
