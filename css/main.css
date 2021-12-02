@@ -14,32 +14,13 @@ html {
 	box-sizing: inherit;
 }
 
-.component_section {
-	padding: 2rem 0;
-	border-top: 5px dotted var(--gray);
-}
-
-.sidebar {
-	width: 25%;
-	top: 40px;
-	bottom: 0;
-	position: fixed;
-	overflow-y: scroll;
-}
-
-.main {
-	width: 75%;
-	float: right;
-	flex-basis: 80%;
-	overflow-x: auto;
-	padding: 0 1rem;
-}
 
 /* TYPOGRAPHY DEFAULTS */
 	body {
 		font-family: var(--proxima);
 		color: var(--black);
 		background: var(--cream);
+		font-size: 17px;
 	}
 
 	h1, h2, h3 {
@@ -47,9 +28,9 @@ html {
 		text-transform: uppercase;
 	}
 
-	h1 {
-		font-size: 54px;
-		line-height: 63px;
+	h1, .featured__heading {
+		font-size: 3.5em;
+		line-height: 1.2em;
 		letter-spacing: 15px;
 	}
 
@@ -102,6 +83,26 @@ html {
 	}
 
 /* COMPONENT DEFAULTS */
+	.component_section {
+		padding: 2rem 0;
+		border-top: 5px dotted var(--gray);
+	}
+
+	.sidebar {
+		width: 25%;
+		top: 40px;
+		bottom: 0;
+		position: fixed;
+		overflow-y: scroll;
+	}
+
+	.main {
+		width: 75%;
+		float: right;
+		flex-basis: 80%;
+		overflow-x: auto;
+		padding: 0 1rem;
+	}
 	.component {
 		padding: 1rem;
 	}
@@ -114,6 +115,40 @@ html {
 	}
 	.component__code {
 		border: 1px solid var(--gray);
+	}
+/* SECTION DEFAULTS */
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: var(--cream);
+		padding: 1rem;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+	section {
+		margin: 5rem 0 1rem 1rem;
+	}
+
+/* MEDIA */
+	@media (max-width: 1050px) {
+	  .nav-menu {
+	   	display: none;
+	   	background-color: blue;
+	  }
+	}
+
+	@media screen and (min-width: 320px) {
+	  		html { 
+	  			font-size: calc(17px + 6 * ((100vw - 320px) / 680));
+	  		}
+		}
+	@media screen and (min-width: 1000px) {
+	  html {
+	    font-size: 15px;
+	  }
 	}
 
 /* BUTTONS */
@@ -158,13 +193,6 @@ html {
 	}
 
 /* NAV BAR + HEADER */
-	
-	.header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		background: var(--cream);
-	}
 
 	.main_nav {
 		display: flex;
@@ -346,11 +374,15 @@ html {
 		padding: 0 0 1rem;
 	}
 
-/* ORGANISMS */
-	/* MAIN-FEATURE */
+
+
+/*** ORGANISMS ***/
+
+/* MAIN-FEATURE */
 	.featured {
 		display: flex;
 		padding: 2rem 0 2rem 2rem;
+		align-items: flex-start;
 	}
 
 	.featured-3 {
@@ -358,7 +390,8 @@ html {
 		gap: 2rem;
 		align-items: center;
 	}
-	/* MUSEUMS INCLUDED */
+
+/* MUSEUMS INCLUDED */
 	.museums {
 		padding: 3rem;
 	}
@@ -380,10 +413,10 @@ html {
 		object-fit: cover;
 	}
 
-	/* MEET THE PASS */
+/* MEET THE PASS */
 	.pass {
 		display: flex;
-		overflow-x: visible;
+		overflow-x: scroll;
 		padding: 1rem;
 	}
 
@@ -396,7 +429,7 @@ html {
 		width: 100%;
 	}
 
-	/* HOW IT WORKS */
+/* HOW IT WORKS */
 	.how__grid {
 		display: flex;
 		justify-content: space-between;
@@ -420,13 +453,13 @@ html {
     	padding-top: 3rem;
 	}
 
-	/* PROMOTION TICKET */
+/* PROMOTION TICKET */
 
 	.promotion {
 		margin: 5rem auto;
 	}
 
-	/* FAQ */
+/* FAQ */
 
 	.faq__top {
 		display: flex;
@@ -452,7 +485,7 @@ html {
     	flex-basis: 30%;
 	}
 
-	/* FOOTER */
+/* FOOTER */
 	.footer-socials {
 		display: flex;
 		justify-content: space-between;
