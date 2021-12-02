@@ -68,8 +68,8 @@ html {
 	}
 
 	h4 {
-		font-size: 22px;
-		line-height: 40px;
+		font-size: 1.4em;
+		line-height: 1.5;
 		font-weight: 800;
 		color: var(--red);
 	}
@@ -396,9 +396,21 @@ html {
 		display: flex;
 		justify-content: space-between;
 		gap: 2rem;
-		padding: 5rem;
+		padding: 2rem;
 	}
 
-	.how__card {
-		
+	.how__step {
+		flex-basis: 27%;
+	}
+
+	.icon-arrow {
+		display: flex;
+	    align-items: center;
+	    gap: 2rem;
+	    height: 5rem;
+	}
+
+	.how__buy {
+		text-align: center;
+    	padding-top: 3rem;
 	}
