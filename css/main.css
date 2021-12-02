@@ -57,7 +57,6 @@ html {
 		font-size: 42px;
 		line-height: 48px;
 		letter-spacing: 15px;
-		text-align: center;
 	}
 
 	h3 {
@@ -238,14 +237,15 @@ html {
 		display: flex;
 		gap: 1rem;
 		align-items: center;
-		margin: 3rem 0 0;
+		margin-top: 3rem;
+		text-align: right;
+		padding-bottom: 1rem;
 	}
 
 	.questions {
 		font-size: 21px;
 		font-weight: 600;
 		letter-spacing: 3px;
-		line-height: 7rem;
 	}
 
 	.questions:hover {
@@ -259,39 +259,36 @@ html {
 		margin: 0 0 23px;
 	}
 
-	.promotioncard {
-		margin: 2rem;
-		padding: 3rem;
+	.promotioncard2 {
+		margin: 3rem;
+		padding: 2rem;
 		box-shadow: -20px -20px var(--red);
 		border: 3px solid var(--red);
-		display: flex;
-		justify-content: space-between;
 	}
 
-	.promotion--left {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
+	.promotion--top {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
 		justify-content: space-between;
 		gap: 2rem;
 	}
 
-	.promotion--right {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	.promotion--bottom {
+		display: grid;
+		grid-template-columns: 3fr 2fr;
 		justify-content: space-between;
+		align-items: center;
 		gap: 2rem;
 	}
 
 	.promotion--header1 {
-		font-size: 45px;
+		font-size: 40px;
 		font-weight: 700;
 		letter-spacing: 4px;
 		margin: 1rem;
 	}
 	.promotion--header2 {
-		font-size: 45px;
+		font-size: 40px;
 		font-weight: 600;
 		letter-spacing: 6.5px;
 		margin: 0 1rem;
@@ -345,6 +342,7 @@ html {
 	}
 
 /* ORGANISMS */
+	/* MAIN-FEATURE */
 	.featured {
 		display: flex;
 		padding: 2rem 0 2rem 2rem;
@@ -355,7 +353,7 @@ html {
 		gap: 2rem;
 		align-items: center;
 	}
-
+	/* MUSEUMS INCLUDED */
 	.museums {
 		padding: 3rem;
 	}
@@ -377,6 +375,7 @@ html {
 		object-fit: cover;
 	}
 
+	/* MEET THE PASS */
 	.pass {
 		display: flex;
 		overflow-x: visible;
@@ -392,6 +391,7 @@ html {
 		width: 100%;
 	}
 
+	/* HOW IT WORKS */
 	.how__grid {
 		display: flex;
 		justify-content: space-between;
@@ -413,4 +413,25 @@ html {
 	.how__buy {
 		text-align: center;
     	padding-top: 3rem;
+	}
+
+	/* PROMOTION TICKET */
+
+	.promotion {
+		margin: 5rem auto;
+	}
+
+	/* FAQ */
+
+	.faq__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	.faq__header {
+		flex: 1 1 50%;
+		font-size: 4em;
+		line-height: 1.3em;
+		margin: 0;
 	}
