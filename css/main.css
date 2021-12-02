@@ -371,6 +371,7 @@ html {
 		display: flex;
 		justify-content: space-between;
 		align-items: stretch;
+		flex-wrap: wrap;
 	}
 
 	.footer-menu {
@@ -381,7 +382,7 @@ html {
 	.footer-menu__item {
 		color: var(--cream);
 		text-transform: none;
-		font-size: .7rem;
+		font-size: .9rem;
 	}
 
 	.footer-menu__item:hover {
@@ -548,4 +549,11 @@ html {
 
 	.copyright {
 		align-self: flex-end;
+		text-align: right;
+		text-decoration: underline;
+	}
+
+	.footer-col5 {
+		text-align: right;
+		justify-self: center;
 	}
