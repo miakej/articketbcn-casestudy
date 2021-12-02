@@ -97,6 +97,10 @@ html {
 		border-bottom: 2px solid var(--red);
 	}
 
+	.section__header {
+		text-align: center;
+	}
+
 /* COMPONENT DEFAULTS */
 	.component {
 		padding: 1rem;
@@ -159,6 +163,7 @@ html {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		background: var(--cream);
 	}
 
 	.main_nav {
