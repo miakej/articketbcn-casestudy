@@ -135,8 +135,8 @@ html {
 	}
 
 	section {
-		margin: 4rem 0 1rem 1rem;
-		padding: 0 4rem;
+		margin: 3rem 0 1rem 1rem;
+		padding: 0 3rem;
 	}
 
 /* MEDIA */
@@ -206,6 +206,7 @@ html {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 	.icon__card {
 		display: flex;
@@ -257,7 +258,7 @@ html {
 
 	.s2 {
 		bottom: 4vh;
-    	left: 1.5rem;
+    	left: 2rem;
     	transform-origin: bottom left;
 	}
 
@@ -393,7 +394,6 @@ html {
 /* MAIN-FEATURE */
 	.featured {
 		display: flex;
-		padding: 2rem 0 2rem 2rem;
 		align-items: flex-start;
 	}
 
@@ -404,9 +404,6 @@ html {
 	}
 
 /* MUSEUMS INCLUDED */
-	.museums {
-		padding: 3rem;
-	}
 
 	.museum__grid {
 		display: flex;
@@ -436,7 +433,6 @@ html {
 	.pass {
 		display: flex;
 		overflow-x: scroll;
-		padding: 1rem;
 	}
 
 	.pass__card {
@@ -451,7 +447,7 @@ html {
 /* HOW IT WORKS */
 
 	.how {
-		width: 84%;
+		width: 94%;
 		margin: 1rem auto;
 	}
 	.how__grid {
@@ -486,13 +482,12 @@ html {
 
 /* FAQ */
 
-	.faq {
-		padding: 0 2rem;
-	}
+	
 	.faq__top {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+		margin-bottom: 3rem;
 	}
 
 	.faq__header {
