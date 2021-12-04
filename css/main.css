@@ -82,26 +82,6 @@ html {
 		text-align: center;
 	}
 
-	.slogan {
-    	position: fixed;
-   		font-weight: 500;
-    	font-size: .8rem;
-    	transform: rotate(-90deg);
-    	letter-spacing: .15rem;
-	    z-index: -1;
-	}
-
-	.s1 {
-		top: 21vh;
-    	right: 2rem;
-    	transform-origin: top right;
-	}
-
-	.s2 {
-		bottom: 4vh;
-    	left: 2.5rem;
-    	transform-origin: bottom left;
-	}
 
 /* COMPONENT DEFAULTS */
 	.component_section {
@@ -223,94 +203,27 @@ html {
 		margin: 2rem;
 	}
 
-/* CARDS */
-	.featured_icons {
-		list-style-type: none;
-		padding: 0 10% 0 0;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
-	.icon__card {
-		display: flex;
-		align-items: center;
+/* SLOGANS */
+
+	.slogan {
+    	position: fixed;
+   		font-weight: 500;
+    	font-size: .8rem;
+    	transform: rotate(-90deg);
+    	letter-spacing: .15rem;
+	    z-index: -1;
 	}
 
-	.i{
-		max-height: 100%;
-		padding: 0 1rem;
+	.s1 {
+		top: 21vh;
+    	right: 2rem;
+    	transform-origin: top right;
 	}
 
-	.t {
-		font-size: 1em;
-		line-height: 1.5em;
-		text-transform: uppercase;
-	}
-
-	.t--1 {
-		font-size: 1.2em;
-		text-align: center;
-	}
-
-	.price {
-		font-size: 30px;
-		font-weight: 700;
-		letter-spacing: 4px;
-		line-height: 0;
-	}
-
-	.price--real {
-		color: var(--red);
-		text-decoration: line-through solid var(--red);
-	}
-
-	.museum__name, .museum__summary {
-		padding: 0 .5rem;
-	}
-
-	.pass__heading {
-		font-size: 66px;
-		letter-spacing: 14px;
-		line-height: 75px;
-	}
-
-	.pass__text {
-		padding: 0 0 1rem;
-	}
-
-	.question-arrow{
-		display: flex;
-		gap: 1rem;
-		align-items: center;
-		margin-top: 3rem;
-		text-align: right;
-		padding-bottom: 1rem;
-	}
-
-	.questions {
-		font-size: 21px;
-		font-weight: 600;
-		letter-spacing: 3px;
-	}
-
-	.questions:hover {
-		color: var(--red);
-	}
-
-	.how__step {
-		font-size: 20px;
-		font-weight: 600;
-		line-height: 28px;
-		margin: 0 0 23px;
-	}
-
-	.slogan-right {
-		position: fixed;
-		font-weight: 500;
-		font-size: 1.3rem;
-		transform: rotate(-90deg);
-		letter-spacing: .15rem;
+	.s2 {
+		bottom: 4vh;
+    	left: 2.5rem;
+    	transform-origin: bottom left;
 	}
 
 
@@ -365,6 +278,48 @@ html {
 		align-items: center;
 	}
 
+	.featured_icons {
+		list-style-type: none;
+		padding: 0 10% 0 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.icon__card {
+		display: flex;
+		align-items: center;
+		min-width: 180px;
+	}
+
+	.i{
+		max-height: 100%;
+		padding: 0 1rem;
+	}
+
+	.t {
+		font-size: 1em;
+		line-height: 1.5em;
+		text-transform: uppercase;
+	}
+
+	.t--1 {
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+	.price {
+		font-size: 30px;
+		font-weight: 700;
+		letter-spacing: 4px;
+		line-height: 0;
+	}
+
+	.price--real {
+		color: var(--red);
+		text-decoration: line-through solid var(--red);
+	}
+
 /* MUSEUMS INCLUDED */
 
 	.museum__grid {
@@ -391,6 +346,10 @@ html {
 		opacity: 0.7;
 	}
 
+	.museum__name, .museum__summary {
+		padding: 0 .5rem;
+	}
+
 /* MEET THE PASS */
 	.pass {
 		display: flex;
@@ -406,12 +365,42 @@ html {
 		width: 100%;
 	}
 
+	.pass__heading {
+		font-size: 66px;
+		letter-spacing: 14px;
+		line-height: 75px;
+	}
+
+	.pass__text {
+		padding: 0 0 1rem;
+	}
+
+	.question-arrow{
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		margin-top: 3rem;
+		text-align: right;
+		padding-bottom: 1rem;
+	}
+
+	.questions {
+		font-size: 21px;
+		font-weight: 600;
+		letter-spacing: 3px;
+	}
+
+	.questions:hover {
+		color: var(--red);
+	}
+
 /* HOW IT WORKS */
 
 	.how {
 		width: 94%;
 		margin: 1rem auto;
 	}
+
 	.how__grid {
 		display: flex;
 		justify-content: space-between;
@@ -420,6 +409,10 @@ html {
 	}
 
 	.how__step {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 28px;
+		margin: 0 0 23px;
 		flex-basis: 27%;
 	}
 
