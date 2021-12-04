@@ -20,7 +20,7 @@ html {
 		font-family: var(--proxima);
 		color: var(--black);
 		background: var(--cream);
-		font-size: 17px;
+		font-size: 1em;
 	}
 
 	h1, h2, h3 {
@@ -35,21 +35,21 @@ html {
 	}
 
 	h2 {
-		font-size: 42px;
-		line-height: 48px;
+		font-size: 2.5em;
+		line-height: 3em;
 		letter-spacing: 15px;
 	}
 
 	h3 {
-		font-size: 24px;
-		line-height: 31px;
+		font-size: 1.5em;
+		line-height: 1.5em;
 		letter-spacing: 5px;
 		color: var(--red);
 	}
 
 	h4 {
 		font-size: 1.4em;
-		line-height: 1.5;
+		line-height: 1.5em;
 		font-weight: 800;
 		color: var(--red);
 	}
@@ -67,8 +67,8 @@ html {
 	}
 
 	.nav, h5 {
-		font-size: 17px;
-		line-height: 24px;
+		font-size: 1em;
+		line-height: 1.75em;
 		letter-spacing: 2px;
 		font-weight: 400;
 		padding: 0 1.3rem;
@@ -80,6 +80,27 @@ html {
 
 	.section__header {
 		text-align: center;
+	}
+
+	.slogan {
+    	position: fixed;
+   		font-weight: 500;
+    	font-size: .8rem;
+    	transform: rotate(-90deg);
+    	letter-spacing: .15rem;
+	    z-index: -1;
+	}
+
+	.s1 {
+		top: 21vh;
+    	right: 2rem;
+    	transform-origin: top right;
+	}
+
+	.s2 {
+		bottom: 4vh;
+    	left: 2.5rem;
+    	transform-origin: bottom left;
 	}
 
 /* COMPONENT DEFAULTS */
@@ -241,27 +262,6 @@ html {
 		text-decoration: line-through solid var(--red);
 	}
 
-	.slogan {
-    	position: fixed;
-   		font-weight: 500;
-    	font-size: .8rem;
-    	transform: rotate(-90deg);
-    	letter-spacing: .15rem;
-	    z-index: -1;
-	}
-
-	.s1 {
-		top: 21vh;
-    	right: 1.5rem;
-    	transform-origin: top right;
-	}
-
-	.s2 {
-		bottom: 4vh;
-    	left: 2rem;
-    	transform-origin: bottom left;
-	}
-
 	.museum__name, .museum__summary {
 		padding: 0 .5rem;
 	}
@@ -300,47 +300,6 @@ html {
 		font-weight: 600;
 		line-height: 28px;
 		margin: 0 0 23px;
-	}
-
-	.promotioncard2 {
-		margin: 3rem;
-		padding: 2rem;
-		box-shadow: -20px -20px var(--red);
-		border: 3px solid var(--red);
-	}
-
-	.promotion--top {
-		display: grid;
-		grid-template-columns: 3fr 1fr;
-		justify-content: space-between;
-		gap: 2rem;
-	}
-
-	.promotion--bottom {
-		display: grid;
-		grid-template-columns: 3fr 2fr;
-		justify-content: space-between;
-		align-items: center;
-		gap: 2rem;
-	}
-
-	.promotion--header1 {
-		font-size: 40px;
-		font-weight: 700;
-		letter-spacing: 4px;
-		margin: 1rem;
-	}
-	.promotion--header2 {
-		font-size: 40px;
-		font-weight: 600;
-		letter-spacing: 6.5px;
-		margin: 0 1rem;
-		color: var(--gray);
-	}
-	.promotion--subheader {
-		font-weight: 600;
-		text-transform: uppercase;
-		margin: 1rem;
 	}
 
 	.slogan-right {
@@ -480,6 +439,47 @@ html {
 		width: 84%;
 	}
 
+	.promotioncard2 {
+		margin: 3rem;
+		padding: 2rem;
+		box-shadow: -20px -20px var(--red);
+		border: 3px solid var(--red);
+		overflow: auto;
+	}
+
+	.promotion--top {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+
+	.promotion--bottom {
+		display: grid;
+		grid-template-columns: 3fr 2fr;
+		justify-content: space-between;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.promotion--header1 {
+		font-size: 40px;
+		font-weight: 700;
+		letter-spacing: 4px;
+		line-height: 1em;
+	}
+	.promotion--header2 {
+		font-size: 40px;
+		font-weight: 600;
+		letter-spacing: 6.5px;
+		color: var(--gray);
+		line-height: 1em;
+	}
+	.promotion--subheader {
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
 /* FAQ */
 
 	
@@ -530,7 +530,8 @@ html {
 	.footer-menu__item {
 		color: var(--cream);
 		text-transform: none;
-		font-size: .9rem;
+		font-size: 1em;
+		line-height: 1.5em;
 	}
 
 	.footer-menu__item:hover {
@@ -548,6 +549,7 @@ html {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding-bottom: 1rem;
 	}
 
 	.fa {
@@ -565,10 +567,16 @@ html {
 	}
 
 	.copyright {
-		align-self: flex-end;
 		text-align: right;
-		text-decoration: underline;
+		color: #fff;
+		font-size: .8em;
+		line-height: 0;
 	}
+
+	.copyright--link {
+		text-decoration: underline;
+		text-transform: capitalize;
+		}
 
 	.footer-col5 {
 		text-align: right;
