@@ -155,10 +155,16 @@ html {
 	  	.featured__heading { 
 	  			font-size: calc(24px + 18 * ((100vw - 320px) / 680));
   		}
+  		.faq__header { 
+	  			font-size: calc(24px + 18 * ((100vw - 320px) / 680));
+  		}
 	}
 	@media screen and (min-width: 1300px) {
 	  .featured__heading {
 	    font-size: 65px;
+	  }
+	  .faq__header {
+	    font-size: 4em;
 	  }
 	}
 
@@ -403,9 +409,10 @@ html {
 
 	.how__grid {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		gap: 2rem;
 		padding: 2rem;
+		flex-wrap: wrap;
 	}
 
 	.how__step {
@@ -480,6 +487,8 @@ html {
 		justify-content: space-between;
 		align-items: flex-end;
 		margin-bottom: 3rem;
+		flex-wrap: wrap;
+		overflow-x: auto;
 	}
 
 	.faq__header {
